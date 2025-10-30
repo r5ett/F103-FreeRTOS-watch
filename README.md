@@ -12,7 +12,7 @@
 - IDE：MDK-ARM（Keil）
 
 ## 如何使用
-1. 克隆仓库到本地：`git clone https://github.com/r5ett/fl03-FreeRTOS-watch.git`
+1. 克隆仓库到本地：`git clone https://github.com/r5ett/F103-FreeRTOS-watch.git`
 2. 用STM32CubeMX打开`.ioc`文件，生成代码
 3. 在MDK-ARM中打开工程，编译下载到开发板
 
