@@ -1490,6 +1490,11 @@
               <FileType>1</FileType>
               <FilePath>..\mytask\Data.c</FilePath>
             </File>
+            <File>
+              <FileName>ShowMenu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mytask\ShowMenu.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

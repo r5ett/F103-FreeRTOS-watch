@@ -1,6 +1,6 @@
 Dependencies for Project '01_freertos_template', Target '01_freertos_template': (DO NOT MODIFY !)
 F (startup_stm32f103xb.s)(0x64CDE542)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1" -I ../Core/Inc-I.\RTE\_01_freertos_template-ID:\edge_download\STM32\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\edge_download\STM32\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include--pd "__UVISION_VERSION SETA 524" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list startup_stm32f103xb.lst --xref -o 01_freertos_template\startup_stm32f103xb.o --depend 01_freertos_template\startup_stm32f103xb.d)
-F (../Core/Src/main.c)(0x64CDE53F)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/DshanMCU-F103 -I ..\u8g2 -I ..\mytask-I.\RTE\_01_freertos_template-ID:\edge_download\STM32\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\edge_download\STM32\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o 01_freertos_template\main.o --omf_browse 01_freertos_template\main.crf --depend 01_freertos_template\main.d)
+F (../Core/Src/main.c)(0x69089A37)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/DshanMCU-F103 -I ..\u8g2 -I ..\mytask-I.\RTE\_01_freertos_template-ID:\edge_download\STM32\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\edge_download\STM32\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o 01_freertos_template\main.o --omf_browse 01_freertos_template\main.crf --depend 01_freertos_template\main.d)
 I (../Core/Inc/main.h)(0x6497E83D)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x6497BAAC)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x64CDE53E)
@@ -52,6 +52,12 @@ I (../Core/Inc/tim.h)(0x64CDD5C5)
 I (../Core/Inc/usart.h)(0x64CDE53E)
 I (../Core/Inc/usb.h)(0x64A0050F)
 I (../Core/Inc/gpio.h)(0x6497E83B)
+I (..\u8g2\u8g2.h)(0x6630F4CC)
+I (..\u8g2\u8x8.h)(0x6630F4CC)
+I (D:\edge_download\STM32\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x588B8344)
+I (D:\edge_download\STM32\Keil_v5\ARM\ARMCC\include\limits.h)(0x588B8344)
+I (..\mytask\Data.h)(0x69086A2D)
+I (..\mytask\ShowMenu.h)(0x690899FB)
 F (../Core/Src/gpio.c)(0x64CDE53C)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/DshanMCU-F103 -I ..\u8g2 -I ..\mytask-I.\RTE\_01_freertos_template-ID:\edge_download\STM32\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\edge_download\STM32\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o 01_freertos_template\gpio.o --omf_browse 01_freertos_template\gpio.crf --depend 01_freertos_template\gpio.d)
 I (../Core/Inc/gpio.h)(0x6497E83B)
 I (../Core/Inc/main.h)(0x6497E83D)
@@ -1574,14 +1580,30 @@ I (D:\edge_download\STM32\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
 I (D:\edge_download\STM32\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x588B8344)
 I (D:\edge_download\STM32\Keil_v5\ARM\ARMCC\include\stddef.h)(0x588B8344)
 I (D:\edge_download\STM32\Keil_v5\ARM\ARMCC\include\limits.h)(0x588B8344)
-F (..\mytask\Data.c)(0x6908517A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/DshanMCU-F103 -I ..\u8g2 -I ..\mytask-I.\RTE\_01_freertos_template-ID:\edge_download\STM32\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\edge_download\STM32\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o 01_freertos_template\data.o --omf_browse 01_freertos_template\data.crf --depend 01_freertos_template\data.d)
-I (..\mytask\Data.h)(0x6908517A)
+F (..\mytask\Data.c)(0x690864DE)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/DshanMCU-F103 -I ..\u8g2 -I ..\mytask-I.\RTE\_01_freertos_template-ID:\edge_download\STM32\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\edge_download\STM32\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o 01_freertos_template\data.o --omf_browse 01_freertos_template\data.crf --depend 01_freertos_template\data.d)
+I (..\mytask\Data.h)(0x69086A2D)
 I (D:\edge_download\STM32\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
 I (..\u8g2\u8g2.h)(0x6630F4CC)
 I (..\u8g2\u8x8.h)(0x6630F4CC)
 I (D:\edge_download\STM32\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x588B8344)
 I (D:\edge_download\STM32\Keil_v5\ARM\ARMCC\include\stddef.h)(0x588B8344)
 I (D:\edge_download\STM32\Keil_v5\ARM\ARMCC\include\limits.h)(0x588B8344)
+F (..\mytask\ShowMenu.c)(0x69089A8D)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/DshanMCU-F103 -I ..\u8g2 -I ..\mytask-I.\RTE\_01_freertos_template-ID:\edge_download\STM32\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\edge_download\STM32\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o 01_freertos_template\showmenu.o --omf_browse 01_freertos_template\showmenu.crf --depend 01_freertos_template\showmenu.d)
+I (..\mytask\ShowMenu.h)(0x690899FB)
+I (..\u8g2\u8g2.h)(0x6630F4CC)
+I (..\u8g2\u8x8.h)(0x6630F4CC)
+I (D:\edge_download\STM32\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (D:\edge_download\STM32\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x588B8344)
+I (D:\edge_download\STM32\Keil_v5\ARM\ARMCC\include\stddef.h)(0x588B8344)
+I (D:\edge_download\STM32\Keil_v5\ARM\ARMCC\include\limits.h)(0x588B8344)
+I (..\mytask\Data.h)(0x69086A2D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6497BAA5)
+I (../Core/Inc/FreeRTOSConfig.h)(0x6497E83C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6497BAA5)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6497BAA5)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6497BAA5)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x6497BAA5)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6497BAA5)
 F (../Middlewares/Third_Party/FreeRTOS/Source/croutine.c)(0x6497BAA5)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/DshanMCU-F103 -I ..\u8g2 -I ..\mytask-I.\RTE\_01_freertos_template-ID:\edge_download\STM32\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\edge_download\STM32\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o 01_freertos_template\croutine.o --omf_browse 01_freertos_template\croutine.crf --depend 01_freertos_template\croutine.d)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6497BAA5)
 I (D:\edge_download\STM32\Keil_v5\ARM\ARMCC\include\stddef.h)(0x588B8344)

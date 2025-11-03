@@ -76,6 +76,7 @@
 "01_freertos_template\u8x8_u8toa.o"
 "01_freertos_template\u8x8_u16toa.o"
 "01_freertos_template\data.o"
+"01_freertos_template\showmenu.o"
 "01_freertos_template\croutine.o"
 "01_freertos_template\event_groups.o"
 "01_freertos_template\list.o"
