@@ -91,7 +91,8 @@ void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
   */
 void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN Init */
-
+	TaskHandle_t xLightTaskHandle;//LED任务句柄
+	BaseType_t ret;
   /* USER CODE END Init */
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -112,10 +113,14 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* creation of defaultTask */
+	//默认任务
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
+	//LED任务
+	ret =  xTaskCreate(Led_Test, "LightTask", 128, NULL, osPriorityNormal, &xLightTaskHandle); 
+					
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
@@ -132,33 +137,34 @@ void MX_FREERTOS_Init(void) {
   * @retval None
   */
 /* USER CODE END Header_StartDefaultTask */
+//默认任务
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
   LCD_Init();
   LCD_Clear();
-  
+	
   for(;;)
   {
     //Led_Test();
     //LCD_Test();
-	//MPU6050_Test(); 
-	DS18B20_Test();
-	//DHT11_Test();
-	//ActiveBuzzer_Test();
-	//PassiveBuzzer_Test();
-	//ColorLED_Test();
-	//IRReceiver_Test();
-	//IRSender_Test();
-	//LightSensor_Test();
-	//IRObstacle_Test();
-	//SR04_Test();
-	//W25Q64_Test();
-	//RotaryEncoder_Test();
-	//Motor_Test();
-	//Key_Test();
-	//UART_Test();
+		//MPU6050_Test(); 
+		//DS18B20_Test();
+		//DHT11_Test();
+		//ActiveBuzzer_Test();
+		//PassiveBuzzer_Test();
+		//ColorLED_Test();
+		//IRReceiver_Test();
+		//IRSender_Test();
+		//LightSensor_Test();
+		//IRObstacle_Test();
+		//SR04_Test();
+		//W25Q64_Test();
+		//RotaryEncoder_Test();
+		//Motor_Test();
+		//Key_Test();
+		//UART_Test();
   }
   /* USER CODE END StartDefaultTask */
 }

@@ -1,0 +1,16 @@
+01_freertos_template\u8g2_d_setup.o: ..\u8g2\u8g2_d_setup.c
+01_freertos_template\u8g2_d_setup.o: ..\u8g2\u8g2.h
+01_freertos_template\u8g2_d_setup.o: ..\u8g2\u8x8.h
+01_freertos_template\u8g2_d_setup.o: D:\edge_download\STM32\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+01_freertos_template\u8g2_d_setup.o: D:\edge_download\STM32\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+01_freertos_template\u8g2_d_setup.o: D:\edge_download\STM32\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+01_freertos_template\u8g2_d_setup.o: D:\edge_download\STM32\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+01_freertos_template\u8g2_d_setup.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
+01_freertos_template\u8g2_d_setup.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
+01_freertos_template\u8g2_d_setup.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+01_freertos_template\u8g2_d_setup.o: ../Core/Inc/FreeRTOSConfig.h
+01_freertos_template\u8g2_d_setup.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+01_freertos_template\u8g2_d_setup.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+01_freertos_template\u8g2_d_setup.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+01_freertos_template\u8g2_d_setup.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
+01_freertos_template\u8g2_d_setup.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
