@@ -47,26 +47,26 @@ extern void RotaryEncoder_IRQ_Callback(void);
  * -----------------------------------------------
  * 2023/08/04	     V1.0	  韦东山	      创建
  ***********************************************************************/
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-{
-    switch (GPIO_Pin)
-    {
-        case GPIO_PIN_10:
-        {
-            IRReceiver_IRQ_Callback();
-            break;
-        }
+//void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+//{
+//    switch (GPIO_Pin)
+//    {
+//        case GPIO_PIN_10:
+//        {
+//            IRReceiver_IRQ_Callback();
+//            break;
+//        }
 
-        case GPIO_PIN_12:
-        {
-            RotaryEncoder_IRQ_Callback();
-            break;
-        }
+//        case GPIO_PIN_12:
+//        {
+//            RotaryEncoder_IRQ_Callback();
+//            break;
+//        }
 
-        default:
-        {
-            break;
-        }
-    }
-}
+//        default:
+//        {
+//            break;
+//        }
+//    }
+//}
 

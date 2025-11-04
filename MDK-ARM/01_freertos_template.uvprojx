@@ -1495,6 +1495,41 @@
               <FileType>1</FileType>
               <FilePath>..\mytask\ShowMenu.c</FilePath>
             </File>
+            <File>
+              <FileName>ShowCalendar.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mytask\ShowCalendar.c</FilePath>
+            </File>
+            <File>
+              <FileName>ShowClock.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mytask\ShowClock.c</FilePath>
+            </File>
+            <File>
+              <FileName>ShowDHT11.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mytask\ShowDHT11.c</FilePath>
+            </File>
+            <File>
+              <FileName>ShowFlashLight.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mytask\ShowFlashLight.c</FilePath>
+            </File>
+            <File>
+              <FileName>ShowSetting.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mytask\ShowSetting.c</FilePath>
+            </File>
+            <File>
+              <FileName>ShowTimeTask.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mytask\ShowTimeTask.c</FilePath>
+            </File>
+            <File>
+              <FileName>ShowWoodenFish.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mytask\ShowWoodenFish.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

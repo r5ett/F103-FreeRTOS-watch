@@ -106,19 +106,17 @@ int main(void)
   MX_TIM3_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-	// 初始化显示设备（OLED屏幕）
-	u8g2_config();
 	
   /* USER CODE END 2 */
 
   /* Init scheduler */
   // 不使用FreeRTOS时，注释或删除以下两行
-  //osKernelInitialize();  /* Call init function for freertos objects (in freertos.c) */
-  //MX_FREERTOS_Init();
+  osKernelInitialize();  /* Call init function for freertos objects (in freertos.c) */
+  MX_FREERTOS_Init();
 
   /* Start scheduler */
   // 不使用FreeRTOS时，注释或删除此行
-  //osKernelStart();
+  osKernelStart();
   /* We should never get here as control is now taken by the scheduler */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -127,14 +125,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	// 清除屏幕缓存（避免画面残留）
-	u8g2_ClearBuffer(&u8g2);
-	// 绘制UI（调用ShowMenu.c中的绘制函数）
-	ShowUI();
-	// 将缓存内容发送到屏幕硬件
-	u8g2_SendBuffer(&u8g2);
-	// 延时控制刷新频率（50ms刷新一次，可调整）
-	HAL_Delay(50);
+	
   }
   /* USER CODE END 3 */
 }

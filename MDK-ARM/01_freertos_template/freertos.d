@@ -65,3 +65,15 @@
 01_freertos_template\freertos.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h
 01_freertos_template\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
 01_freertos_template\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
+01_freertos_template\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+01_freertos_template\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+01_freertos_template\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+01_freertos_template\freertos.o: ..\u8g2\u8g2.h
+01_freertos_template\freertos.o: ..\u8g2\u8x8.h
+01_freertos_template\freertos.o: D:\edge_download\STM32\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+01_freertos_template\freertos.o: D:\edge_download\STM32\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+01_freertos_template\freertos.o: ..\mytask\Data.h
+01_freertos_template\freertos.o: ..\mytask\ShowTimeTask.h
+01_freertos_template\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+01_freertos_template\freertos.o: ..\mytask\ShowMenu.h
+01_freertos_template\freertos.o: ../Core/Inc/gpio.h

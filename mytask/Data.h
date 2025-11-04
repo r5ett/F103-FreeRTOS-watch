@@ -17,11 +17,19 @@ typedef struct UI{
 
 //图像数据结构体
 typedef struct Images{
-	int x;
-	int y;
-	int w;
-	int h;
+	int x;//横坐标
+	int y;//纵坐标
+	int w;//宽
+	int h;//高
 }Image;
+
+//按键数据结构体
+typedef struct Key_data{
+	uint8_t rdata; //右
+	uint8_t ldata; //左
+	uint8_t updata;//上
+	uint8_t exdata;//确认键
+}Key_data;
 
 //字符串链表
 typedef struct str1{

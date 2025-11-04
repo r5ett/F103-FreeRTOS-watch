@@ -57,3 +57,7 @@
 01_freertos_template\main.o: D:\edge_download\STM32\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
 01_freertos_template\main.o: ..\mytask\Data.h
 01_freertos_template\main.o: ..\mytask\ShowMenu.h
+01_freertos_template\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+01_freertos_template\main.o: ../Drivers/DshanMCU-F103/driver_passive_buzzer.h
+01_freertos_template\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+01_freertos_template\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
